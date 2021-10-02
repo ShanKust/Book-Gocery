@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'Fourthpage.dart';
+
 class SignInPAge extends StatefulWidget {
   @override
   _SignInPAgeState createState() => _SignInPAgeState();
@@ -10,6 +12,7 @@ class SignInPAge extends StatefulWidget {
 
 class _SignInPAgeState extends State<SignInPAge> {
   bool checkboxvalue = false;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -94,7 +97,12 @@ class _SignInPAgeState extends State<SignInPAge> {
               ],
             ),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FourthPage()),
+                );
+              },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20),
                 height: 56,

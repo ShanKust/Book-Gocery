@@ -14,7 +14,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "Book Grocer", home: FirstPage());
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: "Book Grocer",
+        home: FirstPage());
   }
 }
 
@@ -58,6 +61,7 @@ class FirstPage extends StatelessWidget {
               image: AssetImage("assets/1.png"),
             ),
             DotsIndicator(
+              decorator: DotsDecorator(activeColor: Colors.teal),
               dotsCount: 4,
               position: 0,
             ),

@@ -46,6 +46,7 @@ class SecondPage extends StatelessWidget {
               height: 10,
             ),
             DotsIndicator(
+              decorator: DotsDecorator(activeColor: Colors.teal),
               dotsCount: 4,
               position: 1,
             ),
